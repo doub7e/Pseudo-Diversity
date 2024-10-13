@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="Controlling the Fidelity and Diversity of Deep Generative Models via Pseudo Density">
+  <meta property="og:title" content="Controlling the Fidelity and Diversity of Deep Generative Models via Pseudo Density"/>
+  <meta property="og:description" content="Controlling the Fidelity and Diversity of Deep Generative Models via Pseudo Density"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="Controlling the Fidelity and Diversity of Deep Generative Models via Pseudo Density">
+  <meta name="twitter:description" content="Controlling the Fidelity and Diversity of Deep Generative Models via Pseudo Density">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="generative models">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Controlling the Fidelity and Diversity of Deep Generative Models via Pseudo Density</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Controlling the Fidelity and Diversity of Deep Generative Models via Pseudo Density</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <target="_blank">Shuangqi Li</a><sup> 1 </sup>,</span>
+                <!-- <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span> -->
+              <span class="author-block">
+                <target="_blank">Chen Liu</a><sup> 2 </sup>,</span>
+                <!-- <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span> -->
+              <span class="author-block">
+                <target="_blank">Tong Zhang</a><sup> 1 </sup>,</span>
+              <span class="author-block">
+                <target="_blank">Hieu Le</a><sup> 1 </sup>,</span>
+              <span class="author-block">
+                <target="_blank">Sabine Süsstrunk</a><sup> 1 </sup>,</span>
+              <span class="author-block">
+                <target="_blank">Mathieu Salzmann</a><sup> 1 </sup>,</span>
+              </div>
+
+              <div class="is-size-5 publication-authors">
+                <span class="author-block"></a><sup> 1 </sup>School of Computer and Communication Sciences, EPFL</span>
+                <span class="author-block"></a><sup> 2 </sup>Department of Computer Science, City University of Hong Kong</span>
+              </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/2407.08659" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/doub7e/pseudo-diversity" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2407.08659" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We introduce an approach to bias deep generative models, such as GANs and diffusion models, towards generating data with either enhanced fidelity or increased diversity. Our approach involves manipulating the distribution of training and generated data through a novel metric for individual samples, named pseudo density, which is based on the nearest-neighbor information from real samples. Our approach offers three distinct techniques to adjust the fidelity and diversity of deep generative models: 1) Per-sample perturbation, enabling precise adjustments for individual samples towards either more common or more unique characteristics; 2) Importance sampling during model inference to enhance either fidelity or diversity in the generated data; 3) Fine-tuning with importance sampling, which guides the generative model to learn an adjusted distribution, thus controlling fidelity and diversity. Furthermore, our fine-tuning method demonstrates the ability to improve the Frechet Inception Distance (FID) for pre-trained generative models with minimal iterations.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Method overview -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Pseudo Density</h2>
+        <div class="columns is-centered">
+          <div class="column is-full-width">
+            <img src="static/images/overview.png" alt="Pseudo Density Overview">
+          </div>
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            Our approach introduces the concept of pseudo density to control the fidelity and diversity of deep generative models. We estimate the density of high-dimensional image data by first using a pre-trained image feature extractor to lower dimensionality while preserving semantics. For each real sample, we calculate the average distance to its nearest neighbors in the feature space, estimating the volume "occupied" by each sample. The density is then computed as inversely proportional to this volume. We train a lightweight fully-connected network to predict this density given the extracted features as input, allowing efficient computation for any data point. This pseudo density metric evaluates individual samples, distinguishing it from metrics like FID that assess overall model performance. For generated samples, we compute pseudo density by passing them through the feature extractor and trained network. Images with high density typically exhibit common characteristics and better realism, while low-density images feature more unique attributes but may lack realism due to limited training data in those regions.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End method overview -->
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Density-Based Perturbation</h2>
+        <div class="content has-text-justified">
+          <p>
+            While adversarial perturbation was originally used to attack an input image to fool a classification model, their formulation applies to any other type of input to a neural network as long as an objective function is defined.In this work, we utilize pseudo density as the objective function to adversarially perturb a GAN's latent code or the input noise vector of a diffusion model. The proposed perturbation optimizes the latent vector within its neighborhood such that it leads to a higher-density or lower-density generated image, hence increasing the realism or uniqueness of the generated image without drastically changing the image content.
+          </p>
+        </div>
+        <div class="columns is-centered">
+          <div class="column is-full-width">
+            <img src="static/images/perturbation.png" alt="perturbation">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Density-Based Importance Sampling</h2>
+        <div class="content has-text-justified">
+          <p>
+            With the help of pseudo density, not only can we perturb individual samples, but also manipulate data distributions, assigning adjusted probability to samples with different densities. To achieve this, we proceed as follows. For the given dataset, we estimate its data distribution and compute the pseudo density for all samples, and assign two different importance weights for the samples whose densities are above and below a pre-defined density threshold, respectively. Intuitively, by assigning higher weights to above-threshold or below-threshold samples for importance sampling, we can either increase or decrease the proportion of high-density images in the manipulated data distribution.
+          </p>
+        </div>
+        <div class="columns is-centered">
+          <div class="column is-full-width">
+            <img src="static/images/is-inference.png" alt="Inference with importance sampling">
+          </div>
+        </div>
+        <div class="columns is-centered">
+          <div class="column is-full-width">
+            <img src="static/images/is-finetuning.png" alt="Fine-tuning with importance sampling">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Examples</h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/qualitative_pert_1.png" alt="MY ALT TEXT"/>
+        <br>
+        <h2 class="subtitle has-text-centered">
+          <strong>Per-sample perturbation</strong>. From left to right: StyleGAN2(FFHQ), StyleGAN3-T(FFHQ), and ProjectedGAN(LSUN-Church).
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/qualitative_pert_2.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          <strong>Per-sample perturbation</strong>. From left to right: ProjectedGAN(LSUN-Bedroom), IDDPM(LSUN-Bedroom), and ADM(LSUN-Bedroom).
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/qualitative_ft_1.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          <strong>Fine-tuning</strong>. From left to right: StyleGAN2(FFHQ), StyleGAN3-T(FFHQ), and ProjectedGAN(LSUN-Church).
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/qualitative_ft_2.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          <strong>Fine-tuning</strong>. From left to right: ProjectedGAN(LSUN-Bedroom), IDDPM(LSUN-Bedroom), and ADM(LSUN-Bedroom).
+        </h2>
+      </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+
+<!--BibTex citation -->
+    <section id="BibTeX" class="section">
+        <div class="container is-max-desktop content">
+            <h2 class="title">BibTeX</h2>
+            <pre><code>@article{li2024controlling,
+  title={Controlling the Fidelity and Diversity of Deep Generative Models via Pseudo Density},
+  author={Li, Shuangqi and Liu, Chen and Zhang, Tong and Le, Hieu and S{\"u}sstrunk, Sabine and Salzmann, Mathieu},
+  journal={Transactions on Machine Learning Research},
+  year={2024}
+}</code></pre>
+        </div>
+    </section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
