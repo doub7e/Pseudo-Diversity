@@ -6,10 +6,15 @@
 [![Poster](https://img.shields.io/badge/ICLR%202025-Poster-blue)](https://iclr.cc/Conferences/2025) 
 [![arXiv](https://img.shields.io/badge/arXiv-2411.18810-b31b1b.svg)](https://arxiv.org/abs/2411.18810) 
 
+<p align="center">
+  <img src="poster.png" alt="ICLR 2025 Poster" width="100%">
+</p>
+
 [Shuangqi Li](mailto:shuangqi.li@epfl.ch)¹ · [Chen Liu](mailto:chen.liu@cityu.edu.hk)² · [Tong Zhang](mailto:tong.zhang@epfl.ch)¹ · [Hieu Le](mailto:minh.le@epfl.ch)¹ · [Sabine Süsstrunk](mailto:sabine.susstrunk@epfl.ch)¹ · [Mathieu Salzmann](mailto:mathieu.salzmann@epfl.ch)¹
 
 ¹School of Computer and Communication Sciences, EPFL, Switzerland
 ²Department of Computer Science, City University of Hong Kong, Hong Kong
+
 
 ## Overview
 
